@@ -1,0 +1,102 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* MAIN */
+
+.extensions-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.extensions-bar-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* CARD ITEM */
+
+.extensions-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.extensions-cards-item{
+    width: calc(100% / 3 - 30px);
+    padding: 50px;
+}
+
+.extensions-cards-item-text{
+    width: 60%;
+}
+
+.extensions-cards-item-text h2{
+    font-size: 20px;
+    font-weight: 550;
+    margin-bottom: 15px;
+}
+
+.extensions-cards-item-btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* BUTTONS */
+
+.brad{
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* DARK THEME */
+
+.dark-theme{
+    background: #1f2535;
+}
+
+.active-dark{
+    background: #aa2b29;
+    color: black;
+}
+
+.hover-dark{
+    background: #525868;
+    color: #fff;
+}
+
+.focus-dark{
+    outline: 1px solid #aa2b29;
+}
+
+
+/* WHITE THEME */
+
+.focus-light{
+    background: #fff;
+    outline: 1px solid #aa2b29;
+    color: #1e243a;
+}
+
+.active-light{
+    background: #c5c5c5;
+    color: #08122e;
+}
