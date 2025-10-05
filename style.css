@@ -4,6 +4,10 @@
     color: #fff;
 }
 
+body{
+    background: linear-gradient(#050a1d, #0a1540);
+}
+
 /* HEADER */
 
 header{
@@ -17,10 +21,12 @@ header{
 /* MAIN */
 
 .extensions-bar{
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .extensions-bar-btns{
     display: flex;
@@ -29,11 +35,24 @@ header{
     gap: 10px;
 }
 
+button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #aa2b29;
+    transition: 1s;
+}
+
 /* CARD ITEM */
 
 .extensions-cards{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 15px;
 }
 
@@ -76,6 +95,10 @@ header{
 }
 
 /* BUTTONS */
+
+button{
+    border: none
+}
 
 .remove{
     padding: 10px;
@@ -164,6 +187,10 @@ input:checked + .slider:before {
 
 .focus-dark{
     outline: 1px solid #aa2b29;
+}
+
+.outline-dark{
+    outline: 1px solid #525867;
 }
 
 
