@@ -9,6 +9,12 @@ body{
     background: linear-gradient(#050a1d, #0a1540);
 }
 
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 /* HEADER */
 
 header{
@@ -17,10 +23,6 @@ header{
     justify-content: space-between;
     border-radius: 10px;
     padding: 10px;
-}
-
-h1{
-    margin-left: 10px;
 }
 
 /* MAIN */
@@ -213,4 +215,39 @@ input:checked + .slider:before {
 .active-light{
     background: #c5c5c5;
     color: #08122e;
+}
+
+/* MEADIA */
+
+@media(max-width:670px){
+
+    .extensions-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .extensions-bar-title{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .extensions-bar-btns{
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .extensions-cards-item{
+        width: 90%;
+    }
+
+    .extensions-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
