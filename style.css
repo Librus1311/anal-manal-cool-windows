@@ -5,6 +5,7 @@
 }
 
 body{
+    font-family: "Noto Sans", sans-serif;
     background: linear-gradient(#050a1d, #0a1540);
 }
 
@@ -16,6 +17,10 @@ header{
     justify-content: space-between;
     border-radius: 10px;
     padding: 10px;
+}
+
+h1{
+    margin-left: 10px;
 }
 
 /* MAIN */
@@ -70,6 +75,9 @@ button:hover{
 .extensions-cards-item{
     width: calc(100% / 3 - 45px);
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .extensions-cards-item-text{
