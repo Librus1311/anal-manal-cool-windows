@@ -9,8 +9,10 @@ window.addEventListener("load", () => {
     const navBtn = document.querySelectorAll('.nav-btn')
     const headerTitle = document.querySelector('.extensions-bar-title')
     const mainTitle = document.querySelector('.header-title')
+
     const themeBtn = document.querySelector('.theme-color')
-    
+    const image = document.querySelector('.theme-img')
+
 
 
 
@@ -21,23 +23,30 @@ window.addEventListener("load", () => {
         headerTitle.classList.toggle('light-theme')
         themeBtn.classList.toggle('light-theme')
         mainTitle.classList.toggle('light-theme')
-        
-        cardItem.forEach(item => {
-            item.classList.toggle('light-theme')
-        })
-        cardItemTitle.forEach(item => {
-            item.classList.toggle('light-theme')
-        })
-        cardItemText.forEach(item => {
-            item.classList.toggle('light-theme')
-        })
-        removeBtn.forEach(item => {
-            item.classList.toggle('light-theme')
-        })
-        navBtn.forEach(item => {
-            item.classList.toggle('light-theme')
-        })
-    }
+
+        if (image.src.endsWith("img/icon-theme-sun.svg")) {
+            image.src = "img/icon-theme-moon.svg";
+        } else {
+            image.src = "img/icon-theme-sun.svg";
+        }
+
+
+    cardItem.forEach(item => {
+        item.classList.toggle('light-theme')
+    })
+    cardItemTitle.forEach(item => {
+        item.classList.toggle('light-theme')
+    })
+    cardItemText.forEach(item => {
+        item.classList.toggle('light-theme')
+    })
+    removeBtn.forEach(item => {
+        item.classList.toggle('light-theme')
+    })
+    navBtn.forEach(item => {
+        item.classList.toggle('light-theme')
+    })
+}
 
     // Обработчик события
     toggleButton.addEventListener('click', toggleTheme);

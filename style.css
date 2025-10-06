@@ -24,6 +24,11 @@ h2{
     font-weight: 600;
 }
 
+.theme-img-light{
+    background-image: url(img/icon-theme-moon.svg);
+}
+
+
 /* HEADER */
 
 header{
@@ -32,6 +37,12 @@ header{
     justify-content: space-between;
     border-radius: 10px;
     padding: 10px;
+    position: relative;
+}
+
+header h1{
+    position: absolute;
+    left: 60px;
 }
 
 /* MAIN */
@@ -193,7 +204,7 @@ input:checked + .slider:before {
 
 .theme-color{
     cursor: pointer;
-    background: #1f2535;
+    background: #1e243a;
     border-radius: 50%;
     padding: 10px;
 }
