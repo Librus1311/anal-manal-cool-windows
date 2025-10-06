@@ -15,6 +15,15 @@ body{
     padding: 0 15px;
 }
 
+:root{
+    --bg-color: #fff;
+    --text-color: #070823;
+}
+
+h2{
+    font-weight: 600;
+}
+
 /* HEADER */
 
 header{
@@ -80,6 +89,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: #08122e;
 }
 
 .extensions-cards-item-text{
@@ -181,8 +191,26 @@ input:checked + .slider:before {
 
 /* DARK THEME */
 
-.dark-theme{
+.theme-color{
+    cursor: pointer;
     background: #1f2535;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.theme-color img{
+    width: 40px;
+    height: 40px;
+}
+
+.dark-theme{
+    background: #1e243a;
+    color: #fff;
+}
+
+.light-theme{
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
 .active-dark{
